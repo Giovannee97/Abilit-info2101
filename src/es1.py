@@ -1,6 +1,7 @@
 def crea_istogramma():
   
   import numpy as np
+  import matplotlib.pyplot as plt
   a=np.loadtxt("mydata.txt",dtype='i',delimiter=",")
 
   x=[]
@@ -10,6 +11,8 @@ def crea_istogramma():
 
   for i in range(len(x)):
     print(x[i])
+
+  plt.hist(a,len(a))
   
 
 crea_istogramma()
