@@ -3,6 +3,7 @@ a=np.array([1,2,3])
 b=np.matrix([[1,2,3],[4,5,6],[7,8,9]])
 c=np.arange(5,dtype="f")
 d=np.array([3,2,5,6,7])
+e=np.array([1,2,3])
 
 print("1Slice",a[1])
 print("2Slice")
@@ -21,3 +22,8 @@ a=d.copy()
 print("a copy by value da d",c)
 a[0]=989
 print("a dopo aver cambiato valore di un elemento",a)
+
+print("Somma termine a termine tra a e d",a+d)
+print("Somma tra a e 5",a+5)
+print("Prodotto tra a e d",a*d)
+print("Somma tra matrice b e vettore e",b+e)
